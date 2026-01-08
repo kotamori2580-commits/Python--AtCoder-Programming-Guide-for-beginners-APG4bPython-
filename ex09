@@ -1,0 +1,22 @@
+N = int(input())
+A = int(input())
+# ここにプログラムを追記
+for i in range(N):
+  line = input().split()
+  op = line[0]
+  B = int(line[1])
+  
+  if (op =="+"):
+    A += B
+  elif (op == "*"):
+    A *= B
+  elif (op == "-"):
+    A -= B
+  else:
+    if B == 0:
+      print("error")
+      break
+    else:
+      A //= B
+  
+  print(i+1, A)
