@@ -1,0 +1,12 @@
+N = int(input())
+# ここにプログラムを追記
+
+total=0
+A=list(map(int, input().split()))
+for i in range(N):
+  total += A[i]
+  
+avg = total//N
+
+for i in range(N):
+  print(abs(A[i]-avg))
